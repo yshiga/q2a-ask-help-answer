@@ -16,6 +16,8 @@
 		'mail_to' => 'Sending Mail destination(Comma Separated)',
 		'mail_subject' => 'Mail Subject',
 		'mail_beginning' => 'Mail Begining Text',
+		'unanswers_mail_title' => 'An answer isn\'t informed the following question about yet.',
+		'oneanswer_mail_title' => 'Only 1 answer is informed the following question about yet.',
 	);
 
 

@@ -16,6 +16,8 @@
 		'mail_to' => 'メール送信先（カンマ区切り）',
 		'mail_subject' => 'メールタイトル',
 		'mail_beginning' => '冒頭文',
+		'unanswers_mail_title' => '以下の質問にはまだ回答が寄せられていません。',
+		'oneanswer_mail_title' => '以下の質問には、回答がまだ1件しか寄せられていません。',
 	);
 
 
