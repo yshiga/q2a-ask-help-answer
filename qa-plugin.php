@@ -23,6 +23,8 @@
 	qa_register_plugin_phrases('qa-ask-help-answer-lang-*.php', 'qa_ask_help_answer_lang');
 	// admin
 	qa_register_plugin_module('module', 'qa-ask-help-answer-admin.php', 'qa_ask_help_answer_admin', 'Ask Help Answer Admin');
+	// widget
+	qa_register_plugin_module('widget', 'qa-ask-help-answer-admin.php', 'qa_ask_help_answer_widget', 'Ask Help Answer Widget');
 
 /*
 	Omit PHP closing tag to help avoid accidental output
