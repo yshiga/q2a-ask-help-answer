@@ -1,5 +1,7 @@
 <?php
 
+require_once QA_PLUGIN_DIR.'q2a-ask-help-answer/ha-db-client.php';
+
 class qa_ask_help_answer_widget
 {
 	function allow_template($template)
@@ -23,9 +25,8 @@ class qa_ask_help_answer_widget
 		$userid=qa_get_logged_in_userid();
 		$cookieid=qa_cookie_get();
 
-		$title='回答を求む';
-		// $questions= getSeasonalQuestions();
-		$questions=array();
+		$title=qa_opt('qa_ask_help_answer_widget_title');
+		$questions=ha_db_client::get_almost_no_answer_questions(6);
 		$this->output_questions_widget($region, $place, $themeobject, $title, $userid, $cookieid, $questions);
 	}
 

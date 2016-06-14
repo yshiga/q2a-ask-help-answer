@@ -18,6 +18,7 @@
 		'mail_beginning' => 'Mail Begining Text',
 		'unanswers_mail_title' => 'An answer isn\'t informed the following question about yet.',
 		'oneanswer_mail_title' => 'Only 1 answer is informed the following question about yet.',
+		'widget_title' => 'Widget title',
 	);
 
 
