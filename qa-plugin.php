@@ -24,8 +24,7 @@
 	// admin
 	qa_register_plugin_module('module', 'qa-ask-help-answer-admin.php', 'qa_ask_help_answer_admin', 'Ask Help Answer Admin');
 	// widget
-	qa_register_plugin_module('widget', 'qa-ask-help-answer-admin.php', 'qa_ask_help_answer_widget', 'Ask Help Answer Widget');
-
+	qa_register_plugin_module('widget', 'qa-ask-help-answer-widget.php', 'qa_ask_help_answer_widget', 'Ask Help Answer');
 /*
 	Omit PHP closing tag to help avoid accidental output
 */
