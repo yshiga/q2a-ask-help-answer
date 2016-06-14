@@ -15,6 +15,8 @@ class qa_ask_help_answer_admin
 				return '[38qa.net]Questions Mail';
 			case 'qa_ask_help_answer_mail_begin':
 				return 'There are no answers in this question yet.';
+			case 'qa_ask_help_answer_widget_title':
+				return 'Answer Wanted';
 			default:
 				return;
 		}
@@ -33,6 +35,7 @@ class qa_ask_help_answer_admin
 			qa_opt('qa_ask_help_answer_to_address', qa_post_text('qa_ask_help_answer_to_address'));
 			qa_opt('qa_ask_help_answer_mail_subject', qa_post_text('qa_ask_help_answer_mail_subject'));
 			qa_opt('qa_ask_help_answer_mail_begin', qa_post_text('qa_ask_help_answer_mail_begin'));
+			qa_opt('qa_ask_help_answer_widget_title', qa_post_text('qa_ask_help_answer_widget_title'));
 			$ok = qa_lang('admin/options_saved');
 		}
 
@@ -59,6 +62,13 @@ class qa_ask_help_answer_admin
 			'value' => qa_opt('qa_ask_help_answer_mail_begin'),
 			'type' => 'textarea',
 			'rows' => 5
+		);
+
+		$fields[] = array(
+			'label' => qa_lang('qa_ask_help_answer_lang/widget_title'),
+			'tags' => 'NAME="qa_ask_help_answer_widget_title"',
+			'value' => qa_opt('qa_ask_help_answer_widget_title'),
+			'type' => 'text',
 		);
 
 		return array(
