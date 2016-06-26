@@ -18,6 +18,7 @@ class ha_db_client
 		$sday2 = date("Y-m-d H:i:s", strtotime('-2 day'));
 		$eday2 = date("Y-m-d H:i:s", strtotime('-7 day'));
 
+		$userid = 1;
 		$selectspec=qa_db_posts_basic_selectspec($userid);
 		$selectspec['source'] .=" WHERE type='Q'";
 		$selectspec['source'] .=" AND (( ^posts.acount = 0";
